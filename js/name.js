@@ -23,7 +23,7 @@ function toCheckName(event){
     first.classList.remove("hidden");
     greet.innerText = `${username}님! \n접근이 제한됩니다!`;
   }
- 
+
 }
 
 function toBlind(){
@@ -33,10 +33,5 @@ function toBlind(){
     mainPage.classList.add("fade-in");
   },2000);
 }
-
-// function onMainpage(){
-//   mainPage.classList.remove("hidden");
-//   mainPage.classList.add("fade-in");
-// }
 
 nameForm.addEventListener("submit", toCheckName);

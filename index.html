@@ -8,15 +8,21 @@
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-  <form id = "name" class="alignCenter">
-    <input type="text" placeholder="이름을 입력하세요!" required style="text-align:center; width:250px; height:100px;">
-    <input type="submit" value="확인" style="width:50px; height:106px;">
-  </form>
+  <div class="alignCenter">
+    <form id = "name">
+      <input class="nameInput" type="text" placeholder="이름을 입력하세요!" required>
+      <input class="nameSubmut" type="submit" value="확인">
+    </form>
+  </div>
   <div id="first" class="hidden alignCenter">
     <h1 id="greeting"></h1>
     <h2></h2>
   </div>
-  <h1 id="mainPage" class="hidden alignCenter">명촌's</h1>
-  <script src="js/name.js"></script>
+  <div id="mainPage" class="hidden alignCenter">
+    <h1>명촌's</h1>
+    <h2 class="ddayclock"></h2>
+  </div>
+    <script src="js/name.js"></script>
+    <script src="js/clock.js"></script>
 </body>
 </html>
