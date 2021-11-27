@@ -1,32 +1,12 @@
-const clock = document.querySelector(".ddayclock");
+const clock = document.querySelector(".clock h2");
 
-const second = 1000;
-const minutes = second * 60;
-const hours = minutes * 60;
-const days = hours * 24;
-
-function changeLast() {
+function nowTime(){
   const date = new Date();
-  const dday = new Date(2021,10,28,0,0);
-  let lastSeconds = dday - date;
-  const lastDays = String(Math.floor(lastSeconds / days)).padStart(2, "0");
-  const lastHours = String(
-    Math.floor((lastSeconds - lastDays * days) / hours)
-  ).padStart(2, "0");
-  const lastMinutes = String(
-    Math.floor((lastSeconds - lastDays * days - lastHours * hours) / minutes)
-  ).padStart(2, "0");
-  const lastSecond = String(
-    Math.floor(
-      (lastSeconds -
-        lastDays * days -
-        lastHours * hours -
-        lastMinutes * minutes) /
-        second
-    )
-  ).padStart(2, "0");
-  clock.innerText = `${lastDays}d ${lastHours}h ${lastMinutes}m ${lastSecond}s`;
+  const hours = String(date.getHours()).padStart(2,"0");
+  const minutes = String(date.getMinutes()).padStart(2,"0");
+  const seconds = String(date.getSeconds()).padStart(2,"0");
+  clock.innerText = `${hours}:${minutes}:${seconds}`;
 }
 
-changeLast();
-setInterval(changeLast, 1000);
+nowTime();
+setInterval(nowTime,1000);

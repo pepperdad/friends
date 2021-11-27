@@ -4,25 +4,53 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Friends!</title>
-  <link rel="stylesheet" href="css/style.css"/>
+  <title>doyeong's chrome</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="alignCenter">
-    <form id = "name">
-      <input class="nameInput" type="text" placeholder="이름을 입력하세요!" required>
-      <input class="nameSubmut" type="submit" value="확인">
+  <div class="loginForm alignCenter">
+    <form>
+      <input required type="text" placeholder="Write your name!">
     </form>
+    
+    <div id="first" class="hidden">
+      <h1 id="greeting"></h1>
+      <h2></h2>
+    </div>
+    <div id="mainPage" class="hidden">
+      <h1>명촌's</h1>
+    </div>
   </div>
-  <div id="first" class="hidden alignCenter">
-    <h1 id="greeting"></h1>
-    <h2></h2>
+
+  <div id="mainSpace" class="hidden">
+    <div class="clock">
+      <h2>00:00:00</h2>
+    </div>
+
+    <div class="toDoForm">
+      <form>
+        <input type="text" placeholder="TO DO LIST">
+      </form>
+     <ul id="todoList">
+
+     </ul>
+    </div>
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+
+    <div id="user">
+      <span></span>
+      <button type="button">💫</button>
   </div>
-  <div id="mainPage" class="hidden alignCenter">
-    <h1>명촌's</h1>
-    <h2 class="ddayclock"></h2>
+    
   </div>
-    <script src="js/name.js"></script>
-    <script src="js/clock.js"></script>
+  
+  <script src="js/clock.js"></script>
+  <script src="js/greeting.js"></script>
+  <script src="js/todo.js"></script>
+  <script src = "js/background.js"></script>
+  <script src = "js/quotes.js"></script>
 </body>
 </html>
