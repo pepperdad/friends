@@ -1,4 +1,3 @@
-
 const todoform = document.querySelector(".toDoForm form");
 const todoInput = todoform.querySelector("input");
 const todoDiv = document.querySelector(".toDoForm");

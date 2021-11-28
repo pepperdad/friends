@@ -34,7 +34,7 @@ function greeting(event) {
   form.classList.add("hidden");
   localStorage.setItem(NAME_KEY, nameInput.value);
   greet.innerText = `안녕하세요, ${nameInput.value}님!`;
-  greet2.innerText = "명촌의 미래들에 접속하신 것을 환영합니다!";
+  greet2.innerText = "doyeong's에 접속하신 것을 환영합니다!";
   fifo(first);
   setTimeout(()=>first.classList.add("fade-out"),2000);
   setTimeout(fiMain,4000);

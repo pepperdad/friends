@@ -78,6 +78,7 @@ button {
 
 ul {
   padding-left: 0;
+  font-size: 20px;
 }
 
 #user {
@@ -89,9 +90,17 @@ ul {
 }
 
 #quote {
-  font-weight: 600;
+  font-weight: 500;
   position: relative;
   top: 30px;
+}
+
+#weather {
+  position: absolute;
+  left: 70px;
+  top: 50px;
+  font-size: 15px;
+  font-weight: 550;
 }
 
 .alignCenter {
@@ -127,3 +136,4 @@ ul {
     opacity: 0;
   }
 }
+
