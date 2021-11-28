@@ -103,6 +103,16 @@ ul {
   font-weight: 550;
 }
 
+#todoList li {
+  display: flex;
+  justify-content: space-between;
+}
+
+#todoList {
+  width: 200px;
+  height: 20%;
+}
+
 .alignCenter {
   position: absolute;
   top: 50%;
@@ -136,4 +146,3 @@ ul {
     opacity: 0;
   }
 }
-
